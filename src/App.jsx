@@ -1,16 +1,13 @@
-
+import Navbar from "./component/Navbar/Navbar";
+import Slider from "./component/Slider/Slider";
 
 function App() {
- 
-
   return (
     <>
-      <h1>Welcome computer project</h1>
-
-      
-  
+      <Navbar />
+      <Slider />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
