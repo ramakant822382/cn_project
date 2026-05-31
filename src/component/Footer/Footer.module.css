@@ -4,7 +4,9 @@
   font-family: Arial, sans-serif;
 }
 
-/* TOP SECTION */
+/* =========================
+   TOP SECTION
+========================= */
 
 .topSection {
   background: #004a8f;
@@ -14,9 +16,12 @@
 .heading {
   text-align: center;
   color: white;
-  font-size: 40px;
-  margin-bottom: 30px;
+  font-size: 42px;
+  margin-bottom: 35px;
+  font-weight: bold;
 }
+
+/* WEBLINK CARDS */
 
 .cardContainer {
   display: grid;
@@ -44,7 +49,9 @@
   padding: 10px;
 }
 
-/* BOTTOM SECTION */
+/* =========================
+   BOTTOM SECTION
+========================= */
 
 .bottomSection {
   background: #165a97;
@@ -56,19 +63,21 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
+  gap: 25px;
 }
+
+/* VISITOR SECTION */
 
 .visitorBox {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 20px;
   flex-wrap: wrap;
-  justify-content: center;
 }
 
 .visitorBox span {
-  font-size: 25px;
+  font-size: 26px;
   font-weight: bold;
 }
 
@@ -80,14 +89,16 @@
 .counter span {
   background: black;
   color: white;
-  padding: 8px 10px;
+  padding: 7px 10px;
   border-radius: 3px;
-  font-size: 25px;
+  font-size: 22px;
 }
 
 .visitorBox p {
   font-size: 22px;
 }
+
+/* LINKS */
 
 .links {
   display: flex;
@@ -105,12 +116,15 @@
   color: yellow;
 }
 
+/* COPYRIGHT */
+
 .copyright {
-  margin-top: 40px;
+  margin-top: 35px;
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
+  align-items: center;
   gap: 20px;
+  flex-wrap: wrap;
 }
 
 .copyright p {
@@ -121,30 +135,32 @@
   color: yellow;
 }
 
-/* SOCIAL BAR */
+/* =========================
+   SOCIAL BAR
+========================= */
 
 .socialBar {
   position: fixed;
   right: 0;
-  top: 30%;
+  top: 25%;
   display: flex;
   flex-direction: column;
-  z-index: 100;
+  z-index: 999;
 }
 
 .socialBar a,
 .topBtn {
   width: 50px;
   height: 50px;
-  border: none;
-  background: #0d4f8b;
+  background: #0c4e89;
   color: white;
+  border: none;
+  border-bottom: 1px solid rgba(255,255,255,0.2);
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   font-size: 22px;
   cursor: pointer;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   transition: 0.3s;
 }
 
@@ -153,27 +169,38 @@
   background: #ff9800;
 }
 
-/* TABLET */
+/* =========================
+   LAPTOP
+========================= */
 
-@media (max-width: 992px) {
-  .cardContainer {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-/* MOBILE */
-
-@media (max-width: 768px) {
-  .heading {
-    font-size: 28px;
-  }
+@media screen and (max-width: 1200px) {
 
   .cardContainer {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(5, 1fr);
   }
 
   .card {
-    height: 120px;
+    height: 130px;
+  }
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media screen and (max-width: 992px) {
+
+  .cardContainer {
+    grid-template-columns: repeat(5, 1fr);
+    gap: 12px;
+  }
+
+  .card {
+    height: 110px;
+  }
+
+  .heading {
+    font-size: 34px;
   }
 
   .visitorBox span,
@@ -183,52 +210,148 @@
 
   .counter span {
     font-size: 18px;
-    padding: 5px 8px;
-  }
-
-  .links {
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
   }
 
   .links a {
     font-size: 18px;
   }
 
-  .copyright {
-    justify-content: center;
-    text-align: center;
-  }
-
   .copyright p {
     font-size: 16px;
   }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media screen and (max-width: 768px) {
+
+  .topSection {
+    padding: 20px 10px;
+  }
+
+  .heading {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  /* SAME AS PC */
+  .cardContainer {
+    grid-template-columns: repeat(5, 1fr);
+    gap: 8px;
+  }
+
+  .card {
+    height: 75px;
+    border-radius: 6px;
+  }
+
+  .card img {
+    padding: 5px;
+  }
+
+  /* VISITOR SECTION */
+
+  .visitorBox {
+    gap: 10px;
+  }
+
+  .visitorBox span {
+    font-size: 14px;
+  }
+
+  .counter {
+    gap: 3px;
+  }
+
+  .counter span {
+    font-size: 12px;
+    padding: 3px 5px;
+  }
+
+  .visitorBox p {
+    font-size: 12px;
+    text-align: center;
+  }
+
+  /* LINKS */
+
+  .links {
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .links a {
+    font-size: 14px;
+  }
+
+  /* COPYRIGHT */
+
+  .copyright {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .copyright p {
+    font-size: 12px;
+  }
+
+  /* SOCIAL BAR */
 
   .socialBar {
     top: auto;
     bottom: 0;
     right: 0;
-    flex-direction: row;
     width: 100%;
+    flex-direction: row;
     justify-content: center;
   }
 
   .socialBar a,
   .topBtn {
     width: 100%;
-    height: 50px;
+    height: 45px;
+    font-size: 18px;
   }
 }
 
-/* SMALL MOBILE */
+/* =========================
+   SMALL MOBILE
+========================= */
 
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
+
   .cardContainer {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 5px;
   }
 
   .card {
-    height: 140px;
+    height: 60px;
+  }
+
+  .heading {
+    font-size: 20px;
+  }
+
+  .visitorBox span,
+  .visitorBox p {
+    font-size: 11px;
+  }
+
+  .counter span {
+    font-size: 10px;
+    padding: 2px 4px;
+  }
+
+  .links a {
+    font-size: 12px;
+  }
+
+  .copyright p {
+    font-size: 10px;
   }
 }

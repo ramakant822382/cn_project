@@ -1,42 +1,44 @@
 .container {
   width: 100%;
-  min-height: 100vh;
+
   background: #0f172a;
-  padding: 40px 20px;
+  padding: 40px 15px;
   box-sizing: border-box;
 }
 
 .heading {
   text-align: center;
   color: white;
-  font-size: 40px;
+  font-size: 42px;
   margin-bottom: 40px;
   font-weight: bold;
 }
 
-/* CARD GRID */
+/* GRID */
+
 .cardContainer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
+  gap: 20px;
 }
 
 /* CARD */
+
 .card {
   position: relative;
   overflow: hidden;
-  border-radius: 20px;
+  border-radius: 16px;
   cursor: pointer;
-  height: 250px;
-  transition: transform 0.4s ease;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
+  height: 240px;
+  transition: 0.4s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+  background: #fff;
 }
 
 .card:hover {
-  transform: translateY(-10px) scale(1.03);
+  transform: translateY(-8px);
 }
 
-/* IMAGE */
 .image {
   width: 100%;
   height: 100%;
@@ -49,43 +51,66 @@
 }
 
 /* OVERLAY */
+
 .overlay {
   position: absolute;
   bottom: 0;
   width: 100%;
-  padding: 20px;
+  padding: 12px;
   background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.1));
-  color: white;
   text-align: center;
 }
 
 .overlay h2 {
-  font-size: 24px;
+  color: white;
+  font-size: 22px;
   font-weight: bold;
 }
 
 /* TABLET */
+
 @media (max-width: 992px) {
   .cardContainer {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+  }
+
+  .card {
+    height: 200px;
+  }
+
+  .overlay h2 {
+    font-size: 18px;
   }
 }
 
 /* MOBILE */
+
 @media (max-width: 600px) {
+  .container {
+    padding: 20px 10px;
+  }
+
   .heading {
-    font-size: 28px;
+    font-size: 26px;
+    margin-bottom: 20px;
   }
 
   .cardContainer {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
   }
 
   .card {
-    height: 220px;
+    height: 120px;
+    border-radius: 10px;
+  }
+
+  .overlay {
+    padding: 8px 5px;
   }
 
   .overlay h2 {
-    font-size: 20px;
+    font-size: 11px;
   }
 }
