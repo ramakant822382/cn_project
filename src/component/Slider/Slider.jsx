@@ -2,13 +2,13 @@ import React, { useEffect, useState } from "react";
 import styles from "./Slider.module.css";
 
 const images = [
-  "https://images.unsplash.com/photo-1516321318423-f06f85e504b3",
-  "https://images.unsplash.com/photo-1558494949-ef010cbdcc31",
-  "https://images.unsplash.com/photo-1520869562399-e772f042f422",
-  "https://images.unsplash.com/photo-1451187580459-43490279c0fa",
-  "https://images.unsplash.com/photo-1504384308090-c894fdcc538d",
-  "https://images.unsplash.com/photo-1518770660439-4636190af475",
-  "https://images.unsplash.com/photo-1520869562399-e772f042f422",
+  "https://www.istockphoto.com/photo/electric-circuit-board-and-technological-abstract-pattern-gm594930036-101993641",
+  "https://media.istockphoto.com/id/1182111136/photo/computer-motherboard-background-with-blur-neon-multicolor-glow.jpg?s=1024x1024&w=is&k=20&c=4UCZo4Hk2xN5XdFaNYAYAGO9U0FgSw47ANpIHgCG3Og=",
+  "https://images.unsplash.com/photo-1691435828932-911a7801adfb?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  "https://plus.unsplash.com/premium_photo-1764705706588-3583af8561f7?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  "https://plus.unsplash.com/premium_photo-1664297989345-f4ff2063b212?q=80&w=1098&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  "https://plus.unsplash.com/premium_photo-1740363268539-cd9093c3b5d1?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  "https://plus.unsplash.com/premium_photo-1764691402272-da10f0911e9e?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
 ];
 function Slider() {
   const [current, setCurrent] = useState(0);
