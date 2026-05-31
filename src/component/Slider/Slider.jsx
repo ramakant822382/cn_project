@@ -2,13 +2,13 @@ import React, { useEffect, useState } from "react";
 import styles from "./Slider.module.css";
 
 const images = [
-  "/images/image_1.png",
-  "/images/image_3.jpeg",
-  "/images/image_4.jpeg",
-  "/images/image_5.jpeg",
-  "/images/image_7.jpeg",
-  "/images/image_8.jpeg",
-  "/images/image_9.jpeg",
+  "https://images.unsplash.com/photo-1516321318423-f06f85e504b3",
+  "https://images.unsplash.com/photo-1558494949-ef010cbdcc31",
+  "https://images.unsplash.com/photo-1520869562399-e772f042f422",
+  "https://images.unsplash.com/photo-1451187580459-43490279c0fa",
+  "https://images.unsplash.com/photo-1504384308090-c894fdcc538d",
+  "https://images.unsplash.com/photo-1518770660439-4636190af475",
+  "https://images.unsplash.com/photo-1520869562399-e772f042f422",
 ];
 function Slider() {
   const [current, setCurrent] = useState(0);
