@@ -1,14 +1,14 @@
 .container {
   width: 100%;
 
-  background: #0f172a;
+  background: white;
   padding: 40px 15px;
   box-sizing: border-box;
 }
 
 .heading {
   text-align: center;
-  color: white;
+  color: blue;
   font-size: 42px;
   margin-bottom: 40px;
   font-weight: bold;
