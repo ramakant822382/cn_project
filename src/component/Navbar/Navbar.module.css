@@ -14,8 +14,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 8px 30px;
-  font-size: 15px;
+  padding: 6px 20px;
+  font-size: 13px;
 }
 
 .topLeft {
@@ -27,6 +27,10 @@
   cursor: pointer;
 }
 
+Link {
+  margin-left: 5px;
+}
+
 /* =========================
    Main Navbar
 ========================= */
@@ -36,7 +40,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 40px;
+  padding: 15px 30px;
   color: white;
 }
 
@@ -96,7 +100,7 @@
 .navbar {
   width: 100%;
   background: #f5f5f5;
-  padding: 0 20px;
+  padding: 0 10px;
   position: relative;
 }
 
@@ -105,9 +109,9 @@
   justify-content: center;
   align-items: center;
   flex-wrap: nowrap;
-  gap: 28px;
+  gap: 25px;
   list-style: none;
-  padding: 20px 0;
+  padding: 10px 0;
   font-weight: 600;
   color: #1f2340;
   overflow-x: auto;
@@ -120,7 +124,7 @@
 .navLinks li {
   white-space: nowrap;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 12px;
 }
 
 /* =========================

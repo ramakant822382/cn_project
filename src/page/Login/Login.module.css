@@ -1,0 +1,166 @@
+.container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  gap: 30px;
+  padding: 30px;
+  background: #f4f4f4;
+  box-sizing: border-box;
+}
+
+.leftSection {
+  flex: 2;
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.rightSection {
+  flex: 1;
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.leftSection h2,
+.rightSection h2 {
+  color: #16214b;
+  margin-bottom: 25px;
+  font-size: 2rem;
+}
+
+.leftSection ul {
+  list-style: none;
+  padding: 0;
+}
+
+.leftSection li {
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 18px;
+  color: #666;
+  line-height: 1.6;
+  font-size: 1.1rem;
+}
+
+.leftSection li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: green;
+  font-weight: bold;
+}
+
+.inputGroup {
+  margin-bottom: 18px;
+}
+
+.inputGroup label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.inputGroup input {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #d0d0d0;
+  border-radius: 8px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.inputGroup input:focus {
+  outline: none;
+  border-color: #198754;
+}
+
+.signupBtn {
+  width: 100%;
+  padding: 15px;
+  background: #198754;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 17px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.signupBtn:hover {
+  background: #146c43;
+}
+
+/* Tablet */
+
+@media (max-width: 1024px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .leftSection,
+  .rightSection {
+    width: 100%;
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+  .container {
+    padding: 15px;
+    gap: 15px;
+  }
+
+  .leftSection,
+  .rightSection {
+    padding: 20px;
+  }
+
+  .leftSection h2,
+  .rightSection h2 {
+    font-size: 1.6rem;
+  }
+
+  .leftSection li {
+    font-size: 15px;
+    padding-left: 28px;
+  }
+
+  .inputGroup input {
+    padding: 12px;
+    font-size: 15px;
+  }
+
+  .signupBtn {
+    padding: 13px;
+    font-size: 16px;
+  }
+}
+
+/* Small Mobile */
+
+@media (max-width: 480px) {
+  .container {
+    padding: 10px;
+  }
+
+  .leftSection h2,
+  .rightSection h2 {
+    font-size: 1.4rem;
+  }
+
+  .leftSection li {
+    font-size: 14px;
+  }
+
+  .inputGroup label {
+    font-size: 14px;
+  }
+
+  .inputGroup input {
+    font-size: 14px;
+  }
+}

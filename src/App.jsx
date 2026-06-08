@@ -1,15 +1,21 @@
-import Footer from "./component/Footer/Footer";
-import Navbar from "./component/Navbar/Navbar";
-import Slider from "./component/Slider/Slider";
-import Topic from "./component/Topic/Topic";
-
+import { Routes, Route } from "react-router-dom";
+import "./App.css";
+import Home from "./page/Home/Home";
+import About from "./page/About/About";
+import Layout from "./component/Layout/Layout";
+import Signup from "./page/Signup/Signup";
+import Login from "./page/Login/Login";
 function App() {
   return (
     <>
-      <Navbar />
-      <Slider />
-      <Topic />
-      <Footer />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Layout />}>
+          <Route path="/about" element={<About />} />
+          <Route path="/signup" element={<Signup />} />
+          <Route path="/login" element={<Login />} />
+        </Route>
+      </Routes>
     </>
   );
 }

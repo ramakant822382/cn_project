@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import styles from "./Navbar.module.css";
 import { FaHome, FaBars, FaTimes } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -14,7 +15,14 @@ function Navbar() {
           <span>Screen Reader</span>
         </div>
 
-        <div className={styles.login}>Login ▾</div>
+        <div className={styles.login}>
+          <Link to="/signup" className="link" style={{ padding: "10px" }}>
+            SignUp
+          </Link>
+          <Link to="/login" className="link">
+            Login
+          </Link>
+        </div>
       </header>
 
       {/* Main Navbar */}
@@ -48,10 +56,16 @@ function Navbar() {
 
         <ul className={`${styles.navLinks} ${menuOpen ? styles.active : ""}`}>
           <li>
-            <FaHome />
+            <Link to="/" className="link">
+              <FaHome />
+            </Link>
           </li>
 
-          <li>ABOUT ▾</li>
+          <li>
+            <Link to="/about" className="link">
+              About
+            </Link>
+          </li>
           <li>COURSES ▾</li>
           <li>CENTRE ▾</li>
           <li>ADMISSIONS ▾</li>
