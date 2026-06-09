@@ -1,11 +1,13 @@
 import React, { useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
+import { toast } from "react-toastify";
 import styles from "./Signup.module.css";
+import Loading from "../../component/Loading/Loading";
 
 const Signup = () => {
   const navigate = useNavigate();
-
+  const [loading, setLoading] = useState(false);
   const [formData, setFormData] = useState({
     username: "",
     email: "",
@@ -21,6 +23,7 @@ const Signup = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setLoading(true);
 
     try {
       const response = await axios.post(
@@ -28,16 +31,19 @@ const Signup = () => {
         formData,
       );
 
-      console.log(response.data);
-      alert("Signup Successful");
-
+     toast.success("Signup Successful");
+      setLoading(false);
       // Login Page Redirect
       navigate("/login");
     } catch (error) {
       console.error(error);
-      alert("Signup Failed");
+      toast.error("Signup Failed");
     }
   };
+
+  if (loading) {
+    return <Loading />;
+  }
 
   return (
     <div className={styles.container}>
