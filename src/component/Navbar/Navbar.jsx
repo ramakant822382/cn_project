@@ -66,7 +66,11 @@ function Navbar() {
               About
             </Link>
           </li>
-          <li>COURSES ▾</li>
+          <li>
+            <Link to="/gallary" className="link">
+              Gallary
+            </Link>
+          </li>
           <li>CENTRE ▾</li>
           <li>ADMISSIONS ▾</li>
           <li>PLACEMENTS ▾</li>
