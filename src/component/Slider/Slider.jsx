@@ -6,6 +6,11 @@ const images = [
   "/chapter_2.jpeg",
   "/chapter_3.png",
   "/chapter_4.png",
+  "/chapter_5.png",
+  "/chapter_6.png",
+  "/chapter_7.png",
+  "/chapter_8.png",
+  "/chapter_9.png",
 ];
 function Slider() {
   const [current, setCurrent] = useState(0);
