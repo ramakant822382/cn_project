@@ -4,33 +4,48 @@ import styles from "./Topic.module.css";
 const topics = [
   {
     id: 1,
-    title: "OSI Model",
-    image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3",
+
+    image: "/chapter_1.png",
   },
   {
     id: 2,
-    title: "TCP/IP Model",
-    image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31",
+
+    image: "/chapter_2.jpeg",
   },
   {
     id: 3,
-    title: "Network Topology",
-    image: "https://images.unsplash.com/photo-1520869562399-e772f042f422",
+
+    image: "/chapter_3.png",
   },
   {
     id: 4,
-    title: "IP Addressing",
-    image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa",
+
+    image: "/chapter_4.png",
   },
   {
     id: 5,
-    title: "Routing",
-    image: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d",
+
+    image: "/chapter_5.png",
   },
   {
     id: 6,
-    title: "Switching",
-    image: "https://images.unsplash.com/photo-1518770660439-4636190af475",
+
+    image: "/chapter_6.png",
+  },
+  {
+    id: 7,
+
+    image: "/chapter_7.png",
+  },
+  {
+    id: 8,
+
+    image: "/chapter_8.png",
+  },
+  {
+    id: 9,
+
+    image: "/chapter_9.png",
   },
 ];
 
