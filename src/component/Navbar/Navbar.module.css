@@ -30,7 +30,9 @@
 Link {
   margin-left: 5px;
 }
-
+.log {
+  padding: 5px;
+}
 /* =========================
    Main Navbar
 ========================= */
