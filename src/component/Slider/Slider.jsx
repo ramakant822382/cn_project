@@ -3,14 +3,14 @@ import styles from "./Slider.module.css";
 
 const images = [
   "/chapter_1.png",
-  "/chapter_2.jpeg",
-  "/chapter_3.png",
+  "/project_4.png",
+  "/project_1.png",
   "/chapter_4.png",
-  "/chapter_5.png",
+  "/project_2.png",
   "/chapter_6.png",
-  "/chapter_7.png",
+  "/project_3.png",
   "/chapter_8.png",
-  "/chapter_9.png",
+  "/project_4.png",
 ];
 function Slider() {
   const [current, setCurrent] = useState(0);

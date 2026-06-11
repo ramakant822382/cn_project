@@ -7,6 +7,8 @@ import Signup from "./page/Signup/Signup";
 import Login from "./page/Login/Login";
 import Dashboard from "./page/Dashboard/Dashboard";
 import Gallary from "./page/Gallary/Gallary";
+import ProtectedRoute from "./component/Protect_route/ProtectRoute";
+import Project from "./page/Project/Project";
 
 function App() {
   return (
@@ -14,11 +16,41 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/" element={<Layout />}>
-          <Route path="/about" element={<About />} />
+          <Route
+            path="/about"
+            element={
+              <ProtectedRoute>
+                <About />
+              </ProtectedRoute>
+            }
+          />
+
           <Route path="/signup" element={<Signup />} />
           <Route path="/login" element={<Login />} />
-          <Route path="/dashboard" element={<Dashboard />} />
-          <Route path="/gallary" element={<Gallary />} />
+          <Route
+            path="/dashboard"
+            element={
+              <ProtectedRoute>
+                <Dashboard />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/gallary"
+            element={
+              <ProtectedRoute>
+                <Gallary />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/project"
+            element={
+              <ProtectedRoute>
+                <Project />
+              </ProtectedRoute>
+            }
+          />
         </Route>
       </Routes>
     </>

@@ -3,6 +3,7 @@ import styles from "./Dashboard.module.css";
 
 const Dashboard = () => {
   const username = localStorage.getItem("username") || "Student";
+  console.log("Username from localStorage:", username);
 
   return (
     <div className={styles.dashboard}>

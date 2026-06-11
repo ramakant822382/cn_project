@@ -57,7 +57,7 @@ function Navbar() {
         <ul className={`${styles.navLinks} ${menuOpen ? styles.active : ""}`}>
           <li>
             <Link to="/" className="link">
-              <FaHome />
+              <FaHome /> Home
             </Link>
           </li>
 
@@ -71,11 +71,16 @@ function Navbar() {
               Gallary
             </Link>
           </li>
-          <li>CENTRE ▾</li>
-          <li>ADMISSIONS ▾</li>
-          <li>PLACEMENTS ▾</li>
-          <li>CAREER ▾</li>
-          <li>CONTACT</li>
+          <li>
+            <Link to="/project" className="link">
+              Projects
+            </Link>
+          </li>
+          <li>
+            <Link to="/dashboard" className="link">
+              Dashboard
+            </Link>
+          </li>
         </ul>
       </nav>
     </>

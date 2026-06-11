@@ -20,17 +20,17 @@ const topics = [
   {
     id: 4,
 
-    image: "/chapter_4.png",
+    image: "/project_4.png",
   },
   {
     id: 5,
 
-    image: "/chapter_5.png",
+    image: "/project_1.png",
   },
   {
     id: 6,
 
-    image: "/chapter_6.png",
+    image: "/project_2.png",
   },
   {
     id: 7,
@@ -40,7 +40,7 @@ const topics = [
   {
     id: 8,
 
-    image: "/chapter_8.png",
+    image: "/project_3.png",
   },
   {
     id: 9,
