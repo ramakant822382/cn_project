@@ -7,7 +7,7 @@ function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const navigate = useNavigate();
   const handleLogout = () => {
-    localStorage.removeItem("user");
+    localStorage.removeItem("username");
     navigate("/login");
   };
 
