@@ -27,7 +27,7 @@ function Navbar() {
           <Link to="/login" className="link">
             Login
           </Link>
-          <button onClick={handleLogout} className={styles.btn}>
+          <button onClick={handleLogout} className={styles.logbtn}>
             Logout
           </button>
         </div>
