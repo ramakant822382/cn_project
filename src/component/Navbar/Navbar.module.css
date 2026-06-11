@@ -18,6 +18,21 @@
   font-size: 13px;
 }
 
+.btn {
+  background: transparent;
+  border: none;
+  color: inherit;
+  font: inherit;
+  font-size: 12px; /* size kam */
+  cursor: pointer;
+  padding: 5px;
+  margin: 0;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
 .topLeft {
   display: flex;
   gap: 30px;

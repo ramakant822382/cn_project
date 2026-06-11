@@ -2,9 +2,15 @@ import React, { useState } from "react";
 import styles from "./Navbar.module.css";
 import { FaHome, FaBars, FaTimes } from "react-icons/fa";
 import { Link } from "react-router-dom";
-
+import { useNavigate } from "react-router-dom";
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const navigate = useNavigate();
+  const handleLogout = () => {
+    localStorage.removeItem("token");
+    localStorage.removeItem("user");
+    navigate("/login");
+  };
 
   return (
     <>
@@ -22,9 +28,9 @@ function Navbar() {
           <Link to="/login" className="link">
             Login
           </Link>
-          <Link to="/logout" className="link">
+          <button onClick={handleLogout} className={styles.btn}>
             Logout
-          </Link>
+          </button>
         </div>
       </header>
 

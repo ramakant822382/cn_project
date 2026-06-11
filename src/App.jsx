@@ -9,7 +9,6 @@ import Dashboard from "./page/Dashboard/Dashboard";
 import Gallary from "./page/Gallary/Gallary";
 import ProtectedRoute from "./component/Protect_route/ProtectRoute";
 import Project from "./page/Project/Project";
-import Logout from "./page/Logout/Logout";
 
 function App() {
   return (
@@ -19,7 +18,7 @@ function App() {
         <Route path="/" element={<Layout />}>
           <Route path="/signup" element={<Signup />} />
           <Route path="/login" element={<Login />} />
-           <Route path="/login" element={<Logout />} />
+
           <Route
             path="/about"
             element={
